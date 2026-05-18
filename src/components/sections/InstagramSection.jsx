@@ -32,7 +32,7 @@ export default function InstagramSection() {
   ];
 
   return (
-    <section className="bg-[#e8e4db] py-20">
+    <section id="ig" className="bg-[#e8e4db] py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {posts.map((post, i) => (

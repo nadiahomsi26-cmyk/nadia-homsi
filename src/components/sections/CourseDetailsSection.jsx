@@ -5,6 +5,7 @@ import { BiCalendarStar, BiBook, BiGroup } from "react-icons/bi";
 import Image from "next/image";
 import { couseModules } from "@/data/courseModules";
 import ModuleCard from "../cards/ModuleCard";
+import RegistrationSection from "./RegistrationSection";
 
 export default function CourseDetailsSection() {
   const steps = [
@@ -22,7 +23,7 @@ export default function CourseDetailsSection() {
 
   return (
     <div>
-      <div className="max-w-7xl mx-auto lg:flex items-center lg:gap-2 pb-10 pt-10">
+      <div className="max-w-7xl mx-auto lg:flex items-center lg:gap-2 pb-10">
         <h2 className="text-5xl font-bold text-center text-secondary font-handwritten tracking-wider mb-12">
           Resumen del programa
         </h2>
@@ -68,6 +69,8 @@ export default function CourseDetailsSection() {
           />
         ))}
       </div>
+
+      <RegistrationSection formUrl={"https://docs.google.com/forms/d/e/1FAIpQLSeRCYvLlmctXkelm4HJbUZX4EoMkRsd_7GXnVN2aK766bBIow/viewform"} />
     </div>
   );
 }

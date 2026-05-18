@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 const NAV_ITEMS = [
@@ -10,8 +9,9 @@ const NAV_ITEMS = [
   { href: "/#metodologia", label: "Metodología" },
   { href: "/#vision", label: "Visión" },
   { href: "/#courses", label: "Cursos" },
-  { href: "/#ig", label: "Instagram" },
   { href: "/#partners", label: "Colaboraciones" },
+  { href: "/#ig", label: "Instagram" },
+  { href: "/#testimonies", label: "Testimonios" },
   { href: "/#contacto", label: "Contacto" },
 ];
 
@@ -68,12 +68,7 @@ export default function Navbar() {
                   >
                     <Button
                       variant="ghost"
-                      className={`text-xl w-full hover:bg-white/10 hover:text-[var(--accent)]
-                        ${
-                          isActive(item.href)
-                            ? "text-white font-bold"
-                            : "text-white font-medium"
-                        }`}
+                      className={"text-xl w-full hover:bg-white/10 hover:text-[var(--accent)]"}
                     >
                       {item.label}
                     </Button>

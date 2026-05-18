@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import MethodologyCard from '../cards/MethodologyCard'
 import Modal from '../ui/Modal'
 import { methodologyData } from '../../data/methodologyData'
+import ModuleCard from '../cards/ModuleCard'
 
 const MethodologySection = () => {
   const [selectedMethod, setSelectedMethod] = useState(null)
@@ -11,7 +11,7 @@ const MethodologySection = () => {
   return (
     <section
       id='metodologia'
-      className='container mx-auto py-8 md:py-24 lg:py-8'
+      className='container mx-auto py-8 md:py-8 lg:py-8'
     >
       <h2 className='text-5xl font-bold text-center text-secondary mb-12 font-handwritten tracking-wider'>
         Mi Metodología
@@ -25,7 +25,7 @@ const MethodologySection = () => {
       </p>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center'>
         {methodologyData.map((data, index) => (
-          <MethodologyCard
+          <ModuleCard
             key={index}
             title={data.title}
             description={data.description}
