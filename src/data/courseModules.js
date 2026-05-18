@@ -20,7 +20,7 @@ export const couseModules = [
     {
       title: 'Modulo 4 - Gestión Emocional',
       description:
-        'Aprenderás a reconocer, procesar y regular tus emociones sin reprimirlas ni desbordarte.',
+        'Aprenderás a reconocer, procesar y regular tus emociones sin reprimirlas ni desbordarte',
       image: '/imgs/gestionEmocional.png',
     },
     {
