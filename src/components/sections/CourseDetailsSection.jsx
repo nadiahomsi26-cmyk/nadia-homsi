@@ -70,7 +70,7 @@ export default function CourseDetailsSection() {
         ))}
       </div>
 
-      <RegistrationSection formUrl={"https://docs.google.com/forms/d/e/1FAIpQLSeRCYvLlmctXkelm4HJbUZX4EoMkRsd_7GXnVN2aK766bBIow/viewform"} />
+      <RegistrationSection formUrl={"https://forms.gle/XEGPbWfCGYarPJqdA"} />
     </div>
   );
 }

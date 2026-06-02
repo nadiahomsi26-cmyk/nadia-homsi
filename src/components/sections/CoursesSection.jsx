@@ -296,16 +296,19 @@ const CoursesSectionCloudinary = () => {
                   <h4 className="text-xl font-semibold mb-2 text-card-foreground">
                     {event.title}
                   </h4>
-                  <div className="md:hidden my-2">
-                    <button
-                      onClick={() => handleToggleDescription(event.id)}
-                      className="text-primary hover:underline text-sm font-semibold"
-                    >
-                      {expandedDescriptions[event.id]
-                        ? "Ver menos descripción"
-                        : "Ver más descripción"}
-                    </button>
-                  </div>
+                  {!event?.hasInfoPage && (
+                    <div className="md:hidden my-2">
+                      <button
+                        onClick={() => handleToggleDescription(event.id)}
+                        className="text-primary hover:underline text-sm font-semibold"
+                      >
+                        {expandedDescriptions[event.id]
+                          ? "Ver menos descripción"
+                          : "Ver más descripción"}
+                      </button>
+                    </div>
+                  )}
+
                   <div
                     className={`md:hidden prose prose-sm max-w-none my-2 ${
                       expandedDescriptions[event.id] ? "block" : "hidden"
