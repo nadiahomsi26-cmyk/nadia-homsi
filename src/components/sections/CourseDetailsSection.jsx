@@ -6,6 +6,7 @@ import Image from "next/image";
 import { couseModules } from "@/data/courseModules";
 import ModuleCard from "../cards/ModuleCard";
 import RegistrationSection from "./RegistrationSection";
+import ProgramIntroduction from "./BioTransformationSummary";
 
 export default function CourseDetailsSection() {
   const steps = [
@@ -23,6 +24,9 @@ export default function CourseDetailsSection() {
 
   return (
     <div>
+      <div className="max-w-7xl mx-auto px-4">
+        <ProgramIntroduction />
+      </div>
       <div className="max-w-7xl mx-auto lg:flex items-center lg:gap-2 pb-10">
         <h2 className="text-5xl font-bold text-center text-secondary font-handwritten tracking-wider mb-12">
           Resumen del programa
